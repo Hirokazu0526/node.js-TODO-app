@@ -27,11 +27,10 @@ export class App {
                 const inputCheckBoxElement = todoItemElement.querySelector(".checkbox");
                 inputCheckBoxElement.addEventListener("change", () => {
                     // 指定したTodoアイテムの完了状態を反転させる
-                    this.todoListModel.upDataTodo({
+                    this.todoListModel.updataTodo({
                         id: item.id,
                         completed: !item.completed
                     });
-                    console.log(inputCheckBoxElement);
                 });
                 
 
